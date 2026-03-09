@@ -4,4 +4,4 @@ WORKDIR /app
 
 COPY calculator.py .
 
-CMD ["python", "calculator.py"]
+CMD ["python","calculator.py"]
