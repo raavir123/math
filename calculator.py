@@ -8,4 +8,4 @@ WORKDIR /app
 COPY calculator .
 
 # command to run app
-CMD ["python", calculator"]
+CMD ["python", calculator.py"]
