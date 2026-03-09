@@ -1,13 +1,15 @@
+
+import os
 print("Simple Calculator")
 print("1. Add")
 print("2. Subtract")
 print("3. Multiplication")
 print("4. Divison")
 
-choice = input("Enter choice (1/2/3/4): ")
+num1 = float(os.environ.get("NUM1", 10))
+num2 = float(os.environ.get("NUM2", 5))
+choice = os.environ.get("CHOICE", "1")
 
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
 
 if choice == '1':
     print("Result:", num1 + num2)
