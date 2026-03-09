@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /app
 
 # code copy
-COPY calculator .
+COPY calculator.py .
 
 # command to run app
 CMD ["python", calculator.py"]
