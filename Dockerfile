@@ -1,11 +1,7 @@
-# use official python image
-FROM python:3.9
+FROM python:3.9-slim
 
-# set working directory
 WORKDIR /app
 
-# code copy
 COPY calculator.py .
 
-# command to run app
-CMD ["python", calculator.py"]
+CMD ["python", "calculator.py"]
